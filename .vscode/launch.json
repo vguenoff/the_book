@@ -4,10 +4,9 @@
     {
       "type": "lldb",
       "request": "launch",
-      "name": "Debug",
-      "program": "${workspaceRoot}/target/debug/${workspaceRootFolderName}",
+      "name": "lldb debug",
+      "program": "/Users/vg1/_projects/the_book/hello_cargo/target/debug/hello_cargo",
       "args": [],
-      "cwd": "${workspaceRoot}/target/debug/",
       "sourceLanguages": ["rust"]
     }
   ]
