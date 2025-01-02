@@ -5,7 +5,7 @@
       "type": "lldb",
       "request": "launch",
       "name": "lldb debug",
-      "program": "/Users/vg1/_projects/the_book/hello_cargo/target/debug/hello_cargo",
+      "program": "/Users/vg1/_projects/the_book/guessing_game/target/debug/guessing_game",
       "args": [],
       "sourceLanguages": ["rust"]
     }

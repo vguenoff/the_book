@@ -1,5 +1,5 @@
 fn main() {
-    let a = 123;
+    let a = 12345;
 
     println!("Hello, cargo {a}");
 }
