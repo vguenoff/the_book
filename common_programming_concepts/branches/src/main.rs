@@ -94,12 +94,24 @@ fn main() {
         fahrenheit_to_celsius(32.0)
     );
 
-    fn return_nth_fibonacci(n: u32) -> u32 {
-        if n <= 1 {
-            return n;
+    // fn return_nth_fibonacci(n: u32) -> u32 {
+    //     if n <= 1 {
+    //         return n;
+    //     }
+
+    //     return_nth_fibonacci(n - 1) + return_nth_fibonacci(n - 2)
+    // }
+
+    fn return_nth_fibonacci(n: usize) -> i32 {
+        let mut seq = Vec::from([0, 1]);
+        let mut index: usize = 2;
+
+        while index <= n.try_into().unwrap() {
+            seq.push(seq[index - 1] + seq[index - 2]);
+            index += 1;
         }
 
-        return_nth_fibonacci(n - 1) + return_nth_fibonacci(n - 2)
+        seq[n]
     }
 
     println!("The sixth fibonacci number is {}.", return_nth_fibonacci(6));
